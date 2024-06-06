@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Madhaani-Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <!-- <script src="path/to/local/a076d05399.js"></script> Include the locally hosted FontAwesome script -->
+   
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet" />
+    <!-- <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> -->
+
+    <link rel="stylesheet" href="style.css">
+       
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav class="flex">
+                <input type="checkbox" id="check">
+                <label for="check" class="checkbtn">
+                    <i class="fas fa-bars"></i>
+                </label>
+                <div class="logo">
+                    <h1 id="brand-name"><a href="index.html" class="active"><img src="./images/madhaani_logo2.jpeg" alt="" srcset=""></a></h1>
+                   
+                </div>
+
+                <ul>
+                    <li><a href="gallery.html"  onclick="loadGalleryPage() " aria-label="Gallery">Gallery</a></li>
+                    <li><a href="items.html" onclick="loadItemPage()">Menu</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="#">Special Items<i class="fas fa-caret-down"></i></a>
+                        <ul class="dropdown"> <!-- Add the dropdown class here -->
+                            <li><a href="milkshake.html">Milkshakes</a></li> 
+                            <li><a href="thickshake.html">Thick Shakes</a></li>
+                            <li><a href="proteinshakes.html">Protein Shakes</a></li>
+                            <li><a href="beverages.html">Beverages</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="testimonials.html">Testimonials<i class="fas fa-caret-down"></i>
+
+                        </a>
+                        <!-- <ul>
+                            <li><a href="#">Frontend <i class="fas fa-caret-right"></i></a>
+                                <ul>
+                                    <li><a href="#">Html 5</a></li>
+                                    <li><a href="#">Css 3</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Backend <i class="fas fa-caret-right"></i></a>
+                                <ul>
+                                    <li><a href="#">Node Js</a></li>
+                                    <li><a href="#"> Express Js</a></li>
+                                </ul>
+                            </li>
+
+                        </ul> -->
+                    </li>
+                    <li><a href="contact.html">Contact</a></li>
+
+                </ul>
+                <div class="main">
+                    <ul>
+                        <li><a href="blog.html" class="user"><i class="fa-solid fa-blog"></i>Blogs</a></li>
+                        <!-- <button class="obtn"> -->
+                        <li><a href="#">Order Now<i class="fas fa-caret-down"></i></a>
+                        <ul>
+                            <li><a href="#">Zomato</a></li>
+                            <li><a href="#">Swiggy</a></li>
+
+                        </ul>
+                    </li>
+                <!-- </button> -->
+                        <div class="bx bx-menu" id="menu-icon"></div>
+                    </ul>
+                </div>
+                <div class="hamburger" id="menu-icon">
+                    <i class="fa fa-bars"></i>
+                </div>
+            </nav>
+
+        </div>
+    </header>
+     <!--progress bar html starts--------------->
+     <div id="progress">
+        <span id="progress-value">
+          &#x1F815;
+        </span>
+      </div>
+       <!--progress bar html ends--------------->
+      
+    <!--slider start-->
+    <div id="section 0" class="slider section">
+        <div class="slides">
+            <!--radio button starts-->
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+
+            <!--radio button ends-->
+            <!--slide images starts-->
+            <div class="slide first ">
+                <img src="./images/sln1.jpeg" alt="Image_not_available">
+                <div class="image-text">
+                     <p><span style="margin-right: 58px;">Welcome to Madhaani where every bite is a delight</span> </p>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="./images/snl2.jpeg" alt="Image_not_available">
+            </div>
+            <div class="slide">
+                <img src="./images/slider3.jpeg" alt="Image_not_available">
+            </div>
+
+
+            <!--slide images ends-->
+            <!--automatic navigation starts-->
+            <div class=" ">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+
+            </div>
+            <!--automatic navigation ends-->
+        </div>
+       <!--manual navigation starts-->
+      
+<div class="navigation-manual">
+    <label for="radio1" class="manual-btn"></label>
+    <label for="radio2" class="manual-btn"></label>
+    <label for="radio3" class="manual-btn"></label>
+</div>   
+<!--manual navigation ends-->
+    </div>
+    <!--slider end-->
+    <!--about us section starts-->
+    <div id="section 1" class="about section">
+        <div class="para">
+            <h1>Welcome to Madhaani</h1>
+        </div>
+        <div class="head2">
+            <h3>"where village traditions meet modern indulgence!"</h3>
+        </div>
+        <div class="about-para">
+            <p>At Madhani, we blend the heartwarming flavors of traditional village life with the irresistible charm of
+                creamy milkshakes and dairy delights. Our mission is simple: to bring joy to your taste buds while
+                honoring the timeless traditions of our ancestors.
+
+                From our frothy milkshakes to our wholesome dairy products, each creation is crafted with love and care,
+                delivering a taste of nostalgia with every sip and bite.
+
+                Join us on a journey where every indulgence is a celebration of heritage and flavor. Welcome to Madhani
+                – where every taste tells a story of tradition and delight.</p>
+        </div>
+    </div>
+    
+    <!--about us section ends-->
+
+    <!--brief section starts-->
+    <div  id="section 2"   class="brief section">
+        <div class="brief-para">
+            <h2>Village Vibes, Creamy Delights</h2>
+        </div>
+        <div class="brief-container">
+
+            <div class="left-content ">
+                <img src="./images/milkshake2.avif" alt="Picture_Not_Avaiable" >
+            </div>
+            <div class="right-content">
+                <p>In our cozy cloud kitchen, we honor the rich tapestry of village life by crafting juices that embody the spirit of community and tradition. Each sip is a journey through lush orchards and sun-kissed fields, capturing the essence of rural landscapes in every drop.</p>
+                <div class="btn">
+                    <a href="items.html" class="btn-link"><button>Explore Our Menu</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Scroll Spy Navigation -->
+   <!-- <section class="sec" id="section0">Home</section>
+   <section class="sec" id="section1">about</section>
+   <section class="sec" id="section2">vibe</section> -->
+    <!---------------------footer content starts here--------------------------------->
+    <!--line section ends-->
+    <footer class="footer">
+        <div class="fcontainer">
+            <div class="row">
+                <div class="footer-col">
+                    <h4><a href="gallery.html">Gallery</a></h4>
+                     <ul>
+                        <li><a href="milkshake.html">Milk Shake</a></li>
+                        <li><a href="thickshake.html">Thick Shakes</a></li>
+                        <li><a href="proteinshakes.html">Protein Shakes</a></li>
+                        <li><a href="beverages.html">Beverages</a></li>
+                       
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4><a href="items.html">Menu</a></h4>
+                     <ul>
+                        <li><a href="milkshake.html">Milk Shake</a></li>
+                        <li><a href="thickshake.html">Thick Shakes</a></li>
+                        <li><a href="proteinshakes.html">Protein Shakes</a></li>
+                        <li><a href="beverages.html">Beverages</a></li>
+                       
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4><a href="about.html">About</a></h4>
+                     <ul>
+                        <li><a href="milkshake.html">Milk Shake</a></li>
+                        <li><a href="thickshake.html">Thick Shakes</a></li>
+                        <li><a href="proteinshakes.html">Protein Shakes</a></li>
+                        <li><a href="beverages.html">Beverages</a></li>
+                       
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Menu</h4>
+                    <ul>
+                        <li><a href="milkshake.html">Milk Shake</a></li>
+                        <li><a href="thickshake.html">Thick Shakes</a></li>
+                        <li><a href="proteinshakes.html">Protein Shakes</a></li>
+                        <li><a href="beverages.html">Beverages</a></li>
+                       
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4><a href="testimonials.html">Testimonials</a></h4>
+                     <ul>
+                        <li><a href="milkshake.html">Milk Shake</a></li>
+                        <li><a href="thickshake.html">Thick Shakes</a></li>
+                        <li><a href="proteinshakes.html">Protein Shakes</a></li>
+                        <li><a href="beverages.html">Beverages</a></li>
+                       
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4><a href="contact.html">Contact</a></h4>
+                     <ul>
+                        <li><a href="milkshake.html">Milk Shake</a></li>
+                        <li><a href="thickshake.html">Thick Shakes</a></li>
+                        <li><a href="proteinshakes.html">Protein Shakes</a></li>
+                        <li><a href="beverages.html">Beverages</a></li>
+                       
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>follow us</h4>
+                   <div class="social-links">
+                    <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://twitter.com/?lang=en" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://in.linkedin.com/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a>
+                   </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="rights">
+        <p>&copy2024 Madhaani. ALL RIGHTS RESERVED. Designed & Developed By Saraf Worldwide Pvt. Ltd.</p>
+    </div>
+     
+    <script src="script.js">
+
+    </script>  
+</body>
+
+</html>

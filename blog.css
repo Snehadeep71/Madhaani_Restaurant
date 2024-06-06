@@ -1,0 +1,175 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+ body{
+    /* background:#1D212B; */
+     background:#E79796; 
+
+} 
+section{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section:nth-child(1){
+    color: #fff;
+}
+section:nth-child(2){
+    color: #1D212B;
+    background: #fff;
+}
+section:nth-child(3){
+    color: #fff;
+}
+section:nth-child(4){
+    color: #1D212B;
+    background: #fff;
+}
+section .drum{
+    margin: 100px;
+}
+section h1{
+    font-size: 60px;
+    
+}
+section h2{
+    font-size: 40px;
+    text-align: center;
+    text-transform: uppercase;
+}
+section .plates{
+    display: flex;
+
+}
+section .plates .text-card{
+    
+    width: 100%;
+    background: #F5CEC7;
+    /* background: #2696E9; */
+    margin: 20px;
+    padding: 20px;
+}
+.text-card {
+    /* Set padding and margin for spacing */
+    padding: 20px;
+    margin-bottom: 20px;
+
+    /* Add box-shadow for a visual effect */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+
+    /* Add transition for smooth resizing */
+    transition: max-height 0.3s ease-in-out;
+
+    /* Set a maximum height to prevent content overflow */
+    max-height: 300px; /* Adjust this value as needed */
+    overflow: auto; /* Enable scrolling if content exceeds the maximum height */
+}
+
+.text-card h3 {
+    /* Add margin-bottom to separate title from content */
+    margin-bottom: 10px;
+}
+
+.text-card p {
+    /* Add margin-bottom for spacing between paragraphs */
+    margin-bottom: 15px;
+}
+/*---------------more text css starts here-------------------*/
+.more-text {
+    display: none;
+}
+.blogsbtn {
+    cursor: pointer;
+}
+/*-------------flower decoration starts-----------------------------*/
+
+.flower-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.dash {
+    font-size: 24px;
+    margin: 0 10px;
+}
+
+.flower-decor {
+    width: 50px;
+    height: auto;
+    margin: 10px;
+}
+
+/*-------------flower decoration ends-------------------------------*/
+
+/*---------------more text css ends here-------------------*/
+
+section .plates .text-card h3{
+   
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+/*-----------------button css starts here--------------------------------*/
+.blogsbtn{
+    display: flex;
+    
+    margin-left: 33.33%;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: #C6C09C;
+    /* background-color: #c59d5f; */
+    border: 2px solid black;
+    border-radius: 25px;
+    font-size: 0.8rem;
+    font-family:'Lucida Sans';
+    font-weight: bold;
+    
+}
+.blogsbtn a {
+    text-decoration: none;
+    color: inherit; /* This ensures the anchor text color inherits from its parent */
+}
+.blogsbtn a:hover {
+    text-decoration: none;
+    color: inherit; /* This ensures the anchor text color inherits from its parent */
+}
+
+.blogsbtn:hover{
+    cursor: pointer;
+    background-color: #fff;
+    color: #c59d5f;
+    transition: 0.1s ease-in;
+}
+.blogsbtn:hover:not(:hover){
+ transition: 0.1s ease-out;
+} 
+/*-----------------button css ends here----------------------------------*/
+/*------------------responsive----------------------*/
+ @media (max-width:900px){
+    section h1{
+        font-size: 40px;
+    }
+    section .plates{
+        flex-direction: column;
+    }
+} 
+.reveal{
+    position:  relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 2s ease;
+}
+.reveal.active{
+    transform: translateY(0px);
+    opacity: 1;
+} 

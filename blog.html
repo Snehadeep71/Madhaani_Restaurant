@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Madhaani-Blogs</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="blog.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .more-text {
+            display: none;
+        }
+        .blogsbtn {
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav class="flex">
+                <input type="checkbox" id="check">
+                <label for="check" class="checkbtn">
+                    <i class="fas fa-bars"></i>
+                </label>
+                <div class="logo">
+                    <h1 id="brand-name"><a href="index.html" class="active">Madhaani</a></h1>
+                </div>
+
+                <ul>
+                    <li><a href="gallery.html"  onclick="loadGalleryPage() ">Gallery</a></li>
+                    <li><a href="items.html" onclick="loadItemPage()">Menu</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="#">Special Items<i class="fas fa-caret-down"></i></a>
+                        <ul>
+                            <li><a href="milkshake.html">Milkshakes</a></li>
+                            <li><a href="thickshake.html">Thick Shakes</a></li>
+                            <li><a href="proteinshakes.html">Protein Shakes</a></li>
+                            <li><a href="beverages.html">Beverages</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="testimonials.html">Testimonials<i class="fas fa-caret-down"></i>
+
+                        </a>
+                        <!-- <ul>
+                            <li><a href="#">Frontend <i class="fas fa-caret-right"></i></a>
+                                <ul>
+                                    <li><a href="#">Html 5</a></li>
+                                    <li><a href="#">Css 3</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Backend <i class="fas fa-caret-right"></i></a>
+                                <ul>
+                                    <li><a href="#">Node Js</a></li>
+                                    <li><a href="#"> Express Js</a></li>
+                                </ul>
+                            </li>
+
+                        </ul> -->
+                    </li>
+                    <li><a href="contact.html">Contact</a></li>
+
+                </ul>
+                <div class="main">
+                    <ul>
+                        <li><a href="blog.html" class="user"><i class="fa-solid fa-blog"></i>Blogs</a></li>
+                        <!-- <button class="obtn"> -->
+                        <li><a href="#">Order Now<i class="fas fa-caret-down"></i></a>
+                        <ul>
+                            <li><a href="#">Zomato</a></li>
+                            <li><a href="#">Swiggy</a></li>
+
+                        </ul>
+                    </li>
+                <!-- </button> -->
+                        <div class="bx bx-menu" id="menu-icon"></div>
+                    </ul>
+                </div>
+                <div class="hamburger" id="menu-icon">
+                    <i class="fa fa-bars"></i>
+                </div>
+            </nav>
+
+        </div>
+    </header>
+     <!--progress bar html starts--------------->
+     <div id="progress">
+        <span id="progress-value">
+          &#x1F815;
+        </span>
+      </div>
+       <!--progress bar html ends--------------->   
+       <section>
+        <h1>Blogs</h1>
+        <div class="flower-container">
+            <span class="dash">—</span>
+            
+            <img src="./images/flower_decor3.png" alt="Flower Decoration" class="flower-decor">
+        
+            <span class="dash">—</span>
+        </div>
+    </section>
+    <section>
+        <div class="drum reveal">
+            <h2>Milkshakes</h2>
+            <div class="plates">
+                <div class="text-card">
+                    <h3>The Delicate Rose Milkshake</h3>
+                    <p>Experience the elegance of a rose milkshake, a unique blend that combines the creamy richness of milk with the floral notes of rose syrup. This delightful beverage is not only visually stunning with its soft pink hue but also offers a refreshing and aromatic flavor.</p>
+                    <p class="more-text">Made with rose syrup, milk, and vanilla ice cream, it’s perfect for a summer day or a special treat. The gentle sweetness and floral fragrance make it a sophisticated choice for any occasion. Garnish with rose petals or a scoop of ice cream for an extra touch of luxury.</p>
+                    <button class="blogsbtn" onclick="toggleText(this)">Read More</button>
+                </div>
+                <div class="text-card">
+                    <h3>The Ultimate Summer Cooler</h3>
+                    <p>Chaas, also known as buttermilk, is a traditional Indian drink that’s perfect for beating the summer heat. Made by blending yogurt with water and seasoning it with spices like cumin, salt, and herbs, chaas is both refreshing and healthy. Its cooling properties aid digestion and provide a soothing effect on the stomach. </p>
+                    <p class="more-text">The tangy flavor combined with the aromatic spices makes it a delightful beverage. Often garnished with coriander leaves or a sprinkle of black salt, chaas is a must-have in every Indian household during the scorching summer months, offering a delicious way to stay hydrated and cool.</p>
+                    <button class="blogsbtn" onclick="toggleText(this)">Read More</button>
+                </div>
+                <div class="text-card">
+                    <h3>Healthy Milkshake</h3>
+                    <p>Looking for a refreshing and nutritious treat? Look no further than homemade milkshakes! Not only are they incredibly tasty, but they can also be packed with essential nutrients. In this blog post, we'll share five mouthwatering milkshake recipes that are not only delicious but also good for you. From classic flavors to innovative combinations, these recipes will satisfy your sweet tooth while keeping you energized and satisfied throughout the day.</p>
+                    <p class="more-text">Here are some more details about the milkshake recipes: Recipe 1, Recipe 2, Recipe 3, Recipe 4, Recipe 5. Each recipe is designed to be both nutritious and delicious, using natural ingredients and minimal added sugars.</p>
+                    <button class="blogsbtn" onclick="toggleText(this)">Read More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="drum reveal">
+            <h2>Thick Shakes</h2>
+            <div class="plates">
+                <div class="text-card">
+                    <h3>Indulge in Pista Lassi – A Nutty Delight</h3>
+                    <p>Pista Lassi, a rich and creamy yogurt-based drink, offers a delightful twist on the traditional lassi. </p>
+                    <p class="more-text">The addition of pistachios gives it a unique nutty flavor and a pleasant crunch. Perfect for a hot summer day or as a special treat, pista lassi is not only delicious but also packed with the goodness of protein and healthy fats. Garnish with chopped pistachios and a sprinkle of saffron for an extra touch of luxury.</p>
+                    <button class="blogsbtn" onclick="toggleText(this)">Read More</button>
+                </div>
+                <div class="text-card">
+                    <h3> A Tropical Twist on Tradition</h3>
+                    <p>Pineapple Lassi brings a tropical flair to the traditional Indian yogurt drink. Combining the tangy sweetness of fresh pineapple with creamy yogurt, this lassi is a refreshing and delightful beverage. </p>
+                    <p class="more-text">Simply blend pineapple chunks, yogurt, milk, and a touch of honey for natural sweetness. The result is a smooth, frothy drink that’s perfect for cooling down on a hot day. Rich in vitamins and probiotics, pineapple lassi is not only delicious but also nutritious. Garnish with a pineapple slice or a sprinkle of cardamom for an exotic finish. Enjoy this tropical treat anytime for a refreshing escape!</p>
+                    <button class="blogsbtn" onclick="toggleText(this)">Read More</button>
+                </div>
+                <div class="text-card">
+                    <h3>Rose Lassi–A Floral Fusion of Flavor</h3>
+                    <p>Rose Lassi offers a fragrant and refreshing twist on the traditional lassi. This delightful drink combines the creamy richness of yogurt with the delicate aroma of rose syrup.</p>
+                    <p class="more-text">Blended with chilled yogurt, milk, and a splash of rose syrup, this lassi is both soothing and indulgent. The subtle floral notes complement the tangy yogurt, creating a unique and flavorful experience. Perfect for cooling down on a hot day or as an elegant treat, rose lassi is easy to prepare and beautifully presented. Garnish with rose petals or a pinch of cardamom for an extra touch of sophistication.</p>
+                    <button class="blogsbtn" onclick="toggleText(this)">Read More</button>
+                </div>
+            </div>
+        </div> 
+    </section>
+    <section>
+        <div class="drum reveal">
+            <h2>Beverages</h2>
+            <div class="plates">
+                <div class="text-card">
+                    <h3>Warm Up with Hot Badam Milk</h3>
+                    <p>Hot Badam Milk, a comforting and nutritious drink, is perfect for chilly evenings. Made by simmering milk with ground almonds (badam), saffron, and cardamom, this beverage is rich and aromatic.</p>
+                    <p class="more-text">The almonds provide a creamy texture and a dose of healthy fats, while saffron adds a golden hue and exotic flavor. Cardamom enhances the warmth and depth of the drink, making it soothing and invigorating. Often sweetened with a touch of honey or sugar, hot badam milk is both a treat and a health boost. Enjoy this delightful drink to relax and rejuvenate, especially during the colder months.</p>
+                    <button class="blogsbtn" onclick="toggleText(this)">Read More</button>
+                </div>
+                <div class="text-card">
+                    <h3>Cold Coffee</h3>
+                    <p>Cold coffee is the perfect pick-me-up for hot days, offering a refreshing twist on your favorite caffeinated beverage. Made by blending chilled coffee, milk, and ice, this drink is both creamy and invigorating.</p>
+                    <p class="more-text">Sweeten it with sugar or a flavored syrup for added indulgence, and top it with whipped cream for a luxurious touch. Whether you prefer it mild or strong, cold coffee provides a delicious way to enjoy your coffee fix while staying cool. Ideal for a mid-afternoon boost or a refreshing treat, cold coffee is a delightful way to beat the heat and energize your day.</p>
+                    <button class="blogsbtn" onclick="toggleText(this)">Read More</button>
+                </div>
+                <div class="text-card">
+                    <h3>Refresh with Lemon Iced Tea</h3>
+                    <p>Lemon Iced Tea is the ultimate summer refresher, combining the zesty brightness of lemon with the cool, soothing qualities of iced tea.</p>
+                    <p class="more-text">Brew your favorite tea, let it chill, then mix in freshly squeezed lemon juice and a touch of sweetener to taste. Served over ice, this beverage is both invigorating and hydrating. The citrusy lemon enhances the tea's natural flavors, making it a perfect thirst-quencher on hot days. Garnish with lemon slices or mint leaves for an extra burst of freshness. Lemon Iced Tea is a simple, delicious way to stay cool and refreshed all summer long.</p>
+                    <button class="blogsbtn" onclick="toggleText(this)">Read More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="fcontainer">
+            <div class="row">
+                <div class="footer-col">
+                    <h4><a href="gallery.html">Gallery</a></h4>
+                     <ul>
+                        <li><a href="milkshake.html">Milk Shake</a></li>
+                        <li><a href="thickshake.html">Thick Shakes</a></li>
+                        <li><a href="proteinshakes.html">Protein Shakes</a></li>
+                        <li><a href="beverages.html">Beverages</a></li>
+                       
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4><a href="items.html">Menu</a></h4>
+                     <ul>
+                        <li><a href="milkshake.html">Milk Shake</a></li>
+                        <li><a href="thickshake.html">Thick Shakes</a></li>
+                        <li><a href="proteinshakes.html">Protein Shakes</a></li>
+                        <li><a href="beverages.html">Beverages</a></li>
+                       
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4><a href="about.html">About</a></h4>
+                     <ul>
+                        <li><a href="milkshake.html">Milk Shake</a></li>
+                        <li><a href="thickshake.html">Thick Shakes</a></li>
+                        <li><a href="proteinshakes.html">Protein Shakes</a></li>
+                        <li><a href="beverages.html">Beverages</a></li>
+                       
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Menu</h4>
+                    <ul>
+                        <li><a href="milkshake.html">Milk Shake</a></li>
+                        <li><a href="thickshake.html">Thick Shakes</a></li>
+                        <li><a href="proteinshakes.html">Protein Shakes</a></li>
+                        <li><a href="beverages.html">Beverages</a></li>
+                       
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4><a href="testimonials.html">Testimonials</a></h4>
+                     <ul>
+                        <li><a href="milkshake.html">Milk Shake</a></li>
+                        <li><a href="thickshake.html">Thick Shakes</a></li>
+                        <li><a href="proteinshakes.html">Protein Shakes</a></li>
+                        <li><a href="beverages.html">Beverages</a></li>
+                       
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4><a href="contact.html">Contact</a></h4>
+                     <ul>
+                        <li><a href="milkshake.html">Milk Shake</a></li>
+                        <li><a href="thickshake.html">Thick Shakes</a></li>
+                        <li><a href="proteinshakes.html">Protein Shakes</a></li>
+                        <li><a href="beverages.html">Beverages</a></li>
+                       
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>follow us</h4>
+                   <div class="social-links">
+                    <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://twitter.com/?lang=en" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://in.linkedin.com/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a>
+                   </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="rights">
+        <p>&copy2024 Madhaani. ALL RIGHTS RESERVED. Designed & Developed By Saraf Worldwide Pvt. Ltd.</p>
+    </div>
+    <script type="text/javascript" >
+        window.addEventListener('scroll',reveal);
+        function reveal(){
+            let reveals = document.querySelectorAll('.reveal');
+            for(let i=0;i<reveals.length;i++){
+            let windowheight = window.innerHeight;
+            let revealtop = reveals[i].getBoundingClientRect().top;
+            let revealpoint=150;
+            if(revealtop < windowheight - revealpoint){
+                reveals[i].classList.add('active');
+            }
+            else{
+                reveals[i].classList.remove('active');
+            }
+            }
+            
+        }
+
+    </script>
+    <script src="blog.js"></script>
+</body>
+</html>

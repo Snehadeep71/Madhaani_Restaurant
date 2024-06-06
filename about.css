@@ -1,0 +1,147 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: url("./images/abackground.jpg");
+    width: 100%;
+}
+.aboutus{
+    display: block;
+    background-size: cover;
+    width: 100%;
+    min-height: 120vh;
+    background-repeat:  no-repeat;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+   justify-content: space-between;
+}
+/* .aboutheading h3{
+    position: relative;
+    color: white;
+    text-align: center;
+    font-size: 3rem;
+    margin-top: 50px;   
+} */
+.containers{
+   margin-top: 20px;
+   justify-content: space-between;
+   display: flex;
+   text-align: center;
+   min-height: 100vh;
+}
+.right-acontainer{
+    margin-top: 120px;
+    width: 550px;
+    height: 440px;
+
+}
+/* .aboutus h3{
+    
+    font-size: 2rem;
+    color: white;
+    position: absolute;
+    
+   
+} */
+.right-acontainer img{
+    width: 400px;
+    height: 400px;
+    margin-right: 80px;
+    border-radius: 70px;
+}
+.left-acontainer{
+    margin-top: 120px;
+    width: 550px;
+    height: 440px;
+    font-size: 1.4rem;
+    margin-left: 60px;
+}
+.left-acontainer .aboutpara p{
+    color: white;
+    line-height: 5vh;
+    
+}
+
+/* .left-acontainer{
+    width: 550px;
+    height: 440px;
+    border: 3px solid red;
+    margin-top: 5%;
+    /* margin-right: 50px;
+    margin-left: -90px;  */
+/* } */
+/* .right-acontainer{
+    width: 550px;
+    height: 440px;
+    border: 3px solid yellow;
+    margin-top: 5%;
+}
+.right-acontainer img{
+    width: 550px;
+    height: 440px;
+}
+.left-acontainer .aboutpara p{
+    color: white;
+}  */
+/* Media Queries for Responsive Design */
+@media (max-width: 992px) {
+    header .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header nav ul li {
+        margin: 10px 0;
+    }
+
+    .containers {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .right-acontainer,
+    .left-acontainer {
+        max-width: 100%;
+    }
+
+    .aboutus h3 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    header .container {
+        padding: 0 20px;
+    }
+
+    .aboutus h3 {
+        font-size: 1.8rem;
+    }
+
+    .left-acontainer .aboutpara p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    header .container {
+        padding: 0 10px;
+    }
+
+    .aboutus h3 {
+        font-size: 1.5rem;
+    }
+
+    .left-acontainer .aboutpara p {
+        font-size: 0.9rem;
+    }
+}

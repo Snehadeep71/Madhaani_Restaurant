@@ -1,0 +1,332 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans';
+    
+}
+
+.contact {
+    position: relative;
+    min-height: auto;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: url("./images/contactbcg.jpeg");
+    background-size: cover;
+
+}
+
+.contact .content {
+    max-width: 800px;
+    text-align: center;
+}
+
+.contact .content h2 {
+    font-size: 36px;
+    font-weight: 500;
+    color: #ffffff;
+}
+
+.contact .content P {
+
+    font-weight: 500;
+    color: #ffffff;
+}
+
+.container2 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.container2 .contactInfo {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+.container2 .contactInfo .box {
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    /* Align items vertically */
+}
+
+.container2 .contactInfo .box .icon {
+    min-width: 60px;
+    height: 60px;
+    background: #ffffff;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+    display: flex;
+    /* Use flexbox */
+
+
+}
+
+.container2 .contactInfo .box .text {
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: #fff;
+    flex-direction: column;
+    font-weight: 300;
+
+
+
+}
+
+.container2 .contactInfo .box .text h3 {
+    font-weight: 500;
+    color: #00bcd4;
+}
+
+.contactForm {
+    width: 40%;
+    padding: 40px;
+    background: #fff;
+
+}
+
+.contactForm h2 {
+    font-size: 30px;
+    color: #333;
+    font-weight: 500;
+}
+
+.contactForm .inputBox {
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.contactForm .inputBox input,
+.contactForm .inputBox textarea {
+    width: 100%;
+    padding: 5px 0px;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+}
+
+.contactForm .inputBox span {
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #666;
+}
+
+.contactForm .inputBox input:focus~span,
+.contactForm .inputBox input:valid~span,
+.contactForm .inputBox textarea:focus~span,
+.contactForm .inputBox textarea:valid~span {
+    color: #e91e63;
+    font-size: 12px;
+    transform: translateY(-20px);
+
+}
+
+.contactForm .inputBox input[type="submit"] {
+    width: 100px;
+    background: #00bcd4;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+}
+
+@media (max-width:991px) {
+    .contact {
+        padding: 50px;
+    }
+
+    .container2 {
+        flex-direction: column;
+    }
+
+    .container2 .contactInfo {
+        margin-bottom: 40px;
+    }
+
+    .container2 .contactInfo,
+    .contactForm {
+        width: 100%;
+    }
+}
+
+/*----------------social media links------------------------*/
+
+.social-media {
+    width: 100%;
+    position: flex;
+    height: 20vh;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+ .icons{
+    width: 60px;
+    height: 45%;
+    border-radius: 100px;
+    background: #fff;
+    /* margin: 220px; */
+    text-align: center;
+    justify-content: center;
+    font-size:40px;
+    line-height: 58px;
+    overflow: hidden;
+    box-shadow: 5px 10px 20px rgba(150, 150, 150, .3);
+    transition: all 0.3s ease-out;
+    margin: 30px;
+    
+
+
+} 
+.icons:hover{
+    width: 400px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+    color: #fff;
+}
+.icons:hover i{
+    color: #fff;
+}
+.icons .fa-facebook{
+    color: #1A6ED8;
+
+}
+.fb:hover{
+    background:#1A6ED8 ;
+}
+.icons:hover i{
+    color: #fff;
+}
+.icons .fa-instagram{
+    color: #cd486b;
+
+}
+.ins:hover{
+    background:#cd486b ;
+}
+.icons .fa-square-x-twitter{
+    color: #000;
+
+}
+.twt:hover{
+    background:#000 ;
+}
+.icons .fa-linkedin{
+    color: #0077B5;
+
+}
+.lin:hover{
+    background:#0077B5 ;
+}
+.icons .fa-github{
+    color: #000;
+
+}
+.git:hover{
+    background:#000 ;
+}
+/*-------------flower decoration starts-----------------------------*/
+
+.flower-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.dash {
+    font-size: 24px;
+    margin: 0 10px;
+}
+
+.flower-decor {
+    width: 50px;
+    height: auto;
+    margin: 10px;
+}
+
+/*-------------flower decoration ends-------------------------------*/
+
+/*-----------responsive---------------*/
+@media only screen and (min-width:320px) and (max-width:991px){
+    .social-media{
+        flex-direction: column;
+        align-items: center;
+    }
+    .icons {
+        width: 40px; /* Decrease icon size for smaller screens */
+        height: 40px;
+        font-size: 24px; /* Decrease font size */
+        line-height: 40px;
+        margin: 5px; /* Reduce margin between icons */
+    }
+}
+
+/* .social-media{
+     width: 100%;
+    height: 100vh; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.icon{
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    background: #fff;
+    margin: 220px;
+    text-align: center;
+    font-size:50px;
+    line-height: 100px;
+    overflow: hidden;
+    box-shadow: 5px 10px 20px rgba(150, 150, 150, .3);
+    transition: all 0.3s ease-out;
+
+
+}
+.icons:hover{
+    width: 400px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: #fff;
+}
+.icons:hover i{
+    color: #fff;
+}
+.icons .fa-facebook{
+    color: #1A6ED8;
+
+}
+.fb:hover{
+    background:#1A6ED8 ;
+}  */
